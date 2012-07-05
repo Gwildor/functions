@@ -7,13 +7,16 @@ string or int roman(string or int number);
 #\#1: Decimal to Roman:
 * __input__: roman(1992);
 * __output__: MCMXCII
+
 #\#2: Roman to decimal:
 * __input__: roman('MCMXCII');
 * __output__: 1992
+
 #\#3: This function can also be "abused" (see notes below) to make invalid Roman numerals valid:
 * __input__: roman(roman('IC')); // invalid
 * __output__: XCIX // valid
 - - -
+
 ### Notes:
 * Because of the limited range the basic Roman numerals have, the integer input has to be between 1 and 3999.
 * The string input is case-insensitive.
