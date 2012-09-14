@@ -1,8 +1,8 @@
 <?php
 
 function roman($input) {
-	static $vals  = array(1000, 500, 100, 50, 10, 5, 1, 'M' => 1000, 'D' => 500, 'C' => 100, 'L' => 50, 'X' => 10, 'V' => 5, 'I' => 1);
-	static $chars = array('M', 'D', 'C', 'L', 'X', 'V', 'I');
+	$vals  = array(1000, 500, 100, 50, 10, 5, 1, 'M' => 1000, 'D' => 500, 'C' => 100, 'L' => 50, 'X' => 10, 'V' => 5, 'I' => 1);
+	$chars = array('M', 'D', 'C', 'L', 'X', 'V', 'I');
 	
 	if (is_numeric($input) && ($input < 1 || $input > 3999)) {
 		return false;
